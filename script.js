@@ -193,7 +193,6 @@
 // }
 
 
-
 const questions = [
     { 
         question: "2 + 2는?", 
@@ -239,6 +238,7 @@ function showNextQuestion() {
         questionElement.textContent = currentQuestion.question;
         answerButtons.forEach((button, index) => {
             button.textContent = currentQuestion.answers[index];
+            button.disabled = false; // 버튼을 다시 활성화
         });
     } else {
         showResult();
@@ -257,7 +257,7 @@ function submitAnswer(event) {
 }
 
 function showPopup() {
-    popup.style.display = 'block';
+    popup.style.display = 'flex';
 }
 
 function retryQuestion() {
