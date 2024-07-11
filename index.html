@@ -35,7 +35,7 @@
 </body>
 </html> -->
 
-
+<!-- 
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -76,6 +76,61 @@
             <button class="answer-button">3</button>
             <button class="answer-button">4</button>
         </div>
+    </div>
+    <div id="result">
+        <h2>축하합니다!</h2>
+        <img src="https://cdn.najunews.kr/news/photo/202311/222522_16128_3436.jpg" alt="축하 이미지">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #question-container {
+            display: none;
+        }
+        #result {
+            display: none;
+        }
+        .answer-button {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #feedback {
+            color: red;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="start-container">
+        <button id="start-button">퀴즈 시작</button>
+    </div>
+    <div id="question-container">
+        <h2 id="question"></h2>
+        <div id="answer-buttons">
+            <button class="answer-button">1</button>
+            <button class="answer-button">2</button>
+            <button class="answer-button">3</button>
+            <button class="answer-button">4</button>
+        </div>
+        <div id="feedback">틀렸습니다! 문제를 다시 풀어주세요.</div>
     </div>
     <div id="result">
         <h2>축하합니다!</h2>
