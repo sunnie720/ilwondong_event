@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #question-container {
+            display: none;
+        }
+        #result {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="start-container">
+        <button id="start-button">퀴즈 시작</button>
+    </div>
+    <div id="question-container">
+        <h2 id="question"></h2>
+        <input type="text" id="answer" placeholder="정답을 입력하세요">
+        <button id="submit-button">제출</button>
+    </div>
+    <div id="result">
+        <h2>축하합니다!</h2>
+        <img src="https://example.com/congratulations.png" alt="축하 이미지">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
